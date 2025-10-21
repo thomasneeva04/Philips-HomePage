@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    height:2694px;
 }
 .first-section{
     background-color: #002b5c;
@@ -8,7 +9,7 @@ body{
     text-align: center;
     font-family: 'Roboto', Arial;
     font-size: 16px;
-    line-height: 1;
+    line-height: 2;
     padding: 2px 0;
     display: flex;
     justify-content: center;
@@ -18,6 +19,11 @@ body{
 }
 .first-section i{
     font-size: 16px;
+}
+.first-section a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 .header-top{
     display: flex;
@@ -57,6 +63,13 @@ body{
     padding-left: 10px;
     padding-top: 10px;
 }
+.header-top a {
+    font-family: 'Roboto', Arial;
+    font-size: 16px;
+    color: inherit;         
+    text-decoration: none;  
+    cursor: pointer;
+}
 .header-line{
     height: 1px;
     border: none;
@@ -66,16 +79,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     padding: 40px 0;
     height: 12px;
     text-align: center;
+    margin-bottom: 40px;
+}
+.care{
+    width: 131px;
+    margin-top: 20px;
+}
+.household-products{
+    width:80px;
+    margin-top: 20px;
+}
+.parts{
+    width:90px;
+    margin-top: 20px;
 }
 .header-bottom div{
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    color: rgb(81, 71, 71);
+}
+.header-bottom a {
+    font-family: 'neuefrutigerworld_w02', arial, helvetica, sans-serif;
+    font-size: 16px;       /* same as original p */
+    color: inherit;        /* keeps original color */
+    text-decoration: none; /* removes underline */
+    cursor: pointer;
+    padding-top: 10px;
 }
 .virat-kohli{
     position:relative;
@@ -84,7 +119,6 @@ body{
 .virat-kohli img{
     width: 100%;
 }
-
 .text1{
     position: absolute;
     top: 10%;
@@ -144,7 +178,7 @@ body{
 .product-item img {
     width: 200px;
     height: auto;
-    transition: transform 0.3s ease; /* smooth zoom on hover */
+    transition: transform 0.3s ease; 
 }
 
 /* Zoom effect on hover */
@@ -222,8 +256,8 @@ body{
 
 .image-text {
     position: absolute;
-    top: 20px; /* adjust vertical position */
-    left: 20px; /* adjust horizontal position */
+    top: 65px; /* adjust vertical position */
+    left: 40px; /* adjust horizontal position */
     color: white;
     font-family: 'Roboto', Arial, sans-serif;
 }
@@ -237,7 +271,10 @@ body{
 .image-text p {
     font-weight: normal;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+.text2{
+    margin-top: 2px;
 }
 
 .image-btn {
@@ -254,5 +291,151 @@ body{
 .image-btn:hover {
     background-color: #004a70; /* darker shade on hover */
 }
+.second-last-footer {
+    background-color: rgba(179, 200, 230);
+    height: 300px;
+    padding: 40px 0;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    font-family:'neuefrutigerworld_w02', arial, helvetica, sans-serif;
+    padding-left: 150px;
+    padding-top: 25px;
+    font-size: 22px;
+}
+.second-last-footer h6{
+    font-weight: 200;
+}
+.bold-text{
+    font-weight: 900;
+}
+.normal-text{
+    font-weight:100;
+}
+.second-last-footer h2, .second-last-footer h3, .second-last-footer h6{
+    color: #0066a1;
+    line-height: 3px;
+}
+.second-last-footer h4{
+    padding-top: 0;
+}
+.support-box {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: left; /* centers input & button */
+    /* position: absolute;  remove this */
+}
 
+.support-input {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    width: 715px;
+    padding-left: 10px;
+}
+
+.support-btn {
+    padding: 10px 20px;
+    background-color: #0074e0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.support-btn:hover {
+    background-color: #004a70;
+}
+
+.support-input:focus{
+    outline: none;
+}
+
+/* Style for the link below */
+.support-link {
+    display: block;        /* ensures it takes full width */
+    text-align:left;    /* centers the link */
+    margin-top: 10px;      /* space between textbox & link */
+    font-size: 14px;
+    color: black;        /* Philips blue */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #002b5c;
+    height: auto;         /* let it adjust based on content */
+    padding: 40px 0;      /* spacing inside the footer */
+}
+.upper-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding-top: 40px;
+    padding-bottom: 52px;
+    font-family: 'neuefrutigerworld_w02', arial, helvetica, sans-serif;
+}
+.footer-column{
+    font-family: 'neuefrutigerworld_w02', arial, helvetica, sans-serif;
+    color: white;
+    padding-left: 20px;
+}
+.footer-column h4{
+    font-size: 16px;
+}
+.footer-column p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: auto;
+}
+.footer hr{
+    background-color: #083971;
+    height: 2px;
+    border: none;
+}
+.lower-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    font-family: 'neuefrutigerworld_w02', arial, helvetica, sans-serif;
+}
+.lower-footer img{
+    padding-top: 20px;
+    padding-right: 11px;
+}
+.footer-column a {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin-left: auto;
+    text-decoration: none; /* removes underline */
+    display: block; /* keeps spacing like <p> */
+}
+.lastline{
+    padding-top: 50px;
+    display: flex;
+    justify-content:left;
+    gap: 23px;
+    color: white;
+    font-size: 14px;
+    font-family: 'neuefrutigerworld_w02', arial, helvetica, sans-serif;
+    font-weight: 200;
+    padding-left:145px;
+}
+.lastline a {
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.trademark{
+    padding-left: 295px;
+    padding-top: 20px;
+}
 
